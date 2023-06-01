@@ -1,0 +1,511 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  <script defer src="script.js"></script><link href="styles.css" rel="stylesheet"></head>
+
+  <body>
+    <header class="header">
+      <div class="_container">
+        <div class="header__wrapper">
+          <div class="header__logo">
+            <a href="#" class="logo-link">
+              <img loading="lazy" src="./assets/img/logo.svg" alt="logo" />
+            </a>
+          </div>
+
+          <div class="header__buttons">
+            <button
+              class="header-button button-light popup-open"
+              data-popup="_popup-call"
+            >
+              <span>зв’язатися</span>
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div
+        class="popup popup-call"
+        data-popupname="_popup-call"
+        aria-modal="true"
+        role="dialog"
+      >
+        <div class="popup__overlay"></div>
+        <div class="popup__scroll">
+          <div class="popup__wrapper">
+            <button class="popup__close">
+              <img src="./assets/img/popup-close.svg" alt="close" />
+            </button>
+
+            <div class="popup__content">
+              <div class="popup__title__container">
+                <p class="popup__title">Contact us</p>
+                <p class="popup__subtitle">Contact us</p>
+              </div>
+
+              <form
+                action="post"
+                class="popup-form"
+                data-popup-open="_popup-thanks"
+              >
+                <div>
+                  <label for="name" class="incorrect">
+                    <span>Ваше ім’я</span>
+                    <input type="text" name="name" id="name" />
+                    <strong>Невірний формат</strong>
+                  </label>
+
+                  <label for="telephone">
+                    <span>Ваше ім’я</span>
+                    <input type="telephone" name="telephone" id="telephone" />
+                    <strong>Невірний формат</strong>
+                  </label>
+                </div>
+
+                <p>
+                  <button type="submit"><span>Відправити</span></button>
+                </p>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div
+        class="popup popup-thanks"
+        data-popupname="_popup-thanks"
+        aria-modal="true"
+        role="dialog"
+      >
+        <div class="popup__overlay"></div>
+        <div class="popup__scroll">
+          <div class="popup__wrapper">
+            <button class="popup__close">
+              <img src="./assets/img/popup-close.svg" alt="close" />
+            </button>
+
+            <div class="popup__bg">
+              <img src="./assets/img/popup-thanks.jpg" alt="thanks" />
+            </div>
+
+            <div class="popup__content">
+              <div class="popup__title__container">
+                <p class="popup__title">Дякуємо!</p>
+                <p class="popup__subtitle">
+                  Вашу заявку прийнято.<br />
+                  Ми зв’яжемося з вами найближчим часом.
+                </p>
+              </div>
+
+              <div class="popup__action">
+                <a href="#" class="popup__button button"
+                  ><span>На головну</span></a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <section class="banner">
+      <div class="_container banner__container">
+        <div class="banner__wrapper">
+          <h1 class="banner__title">
+            послуги АДВОКАТА
+            <span>з гарантією результату</span>
+          </h1>
+
+          <p class="banner__subtitle">
+            Кваліфікована допомога фізичним та юридичним особам
+          </p>
+
+          <button
+            class="banner__button button popup-open"
+            data-popup="_popup-call"
+          >
+            <span>отримати консультацію</span>
+          </button>
+        </div>
+      </div>
+
+      <div class="banner-bg">
+        <div class="banner-bg__label">
+          <p>досвід. результат.</p>
+        </div>
+
+        <div class="banner-bg__img">
+          <img src="./assets/img/banner.png" alt="banner" />
+        </div>
+      </div>
+    </section>
+
+    <section class="about _light">
+      <div class="_container">
+        <div class="about__wrapper">
+          <h2 class="about__title">досвід <span>юридичної</span> практики</h2>
+
+          <div class="about__description">
+            <strong>
+              Багаторічний досвід юридичної практики у різних галузях права.
+              Висока якість надання окремих правничих послуг та комплексної
+              юридичної допомоги.
+            </strong>
+
+            <p>
+              Моя основна юридична практика — спори з приводу незаконного
+              звільнення з державної служби. Спори про поновлення на роботі на
+              будь-якому підприємстві, установі, організації незалежно від
+              підпорядкування та форми власності. Інші трудові спори. Оскарження
+              рішень, дій (бездіяльності) державних органів та їх посадових
+              осіб. Представництво у справах про вчинення корупційних або
+              пов’язаних з корупцією правопорушень.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="services _grey">
+      <div class="_container">
+        <div class="services__wrapper">
+          <div class="services__img">
+            <img src="./assets/img/services.jpg" alt="services" />
+          </div>
+
+          <div class="services__content">
+            <h2 class="services__title">мої <span>послуги</span></h2>
+
+            <ul class="services-list">
+              <li>
+                <button
+                  class="services-list__item popup-open"
+                  data-popup="_popup-sevices-0"
+                >
+                  <span class="services-list__label">
+                    <img src="./assets/img/services-0.svg" alt="services-0" />
+                  </span>
+
+                  <span class="services-list__name">Трудові спори</span>
+                </button>
+              </li>
+
+              <li>
+                <button
+                  class="services-list__item popup-open"
+                  data-popup="_popup-sevices-1"
+                >
+                  <span class="services-list__label">
+                    <img src="./assets/img/services-1.svg" alt="services-1" />
+                  </span>
+
+                  <span class="services-list__name"
+                    >Припинення доступу до ЄКІС (Шлях)</span
+                  >
+                </button>
+              </li>
+
+              <li>
+                <button
+                  class="services-list__item popup-open"
+                  data-popup="_popup-sevices-2"
+                >
+                  <span class="services-list__label">
+                    <img src="./assets/img/services-2.svg" alt="services-2" />
+                  </span>
+
+                  <span class="services-list__name"
+                    >Адміністративні штрафи за перевантаження. Інші
+                    санкції</span
+                  >
+                </button>
+              </li>
+
+              <li>
+                <button
+                  class="services-list__item popup-open"
+                  data-popup="_popup-sevices-3"
+                >
+                  <span class="services-list__label">
+                    <img src="./assets/img/services-3.svg" alt="services-3" />
+                  </span>
+
+                  <span class="services-list__name"
+                    >Адміністративна практика</span
+                  >
+                </button>
+              </li>
+
+              <li>
+                <button
+                  class="services-list__item popup-open"
+                  data-popup="_popup-sevices-4"
+                >
+                  <span class="services-list__label">
+                    <img src="./assets/img/services-4.svg" alt="services-4" />
+                  </span>
+
+                  <span class="services-list__name">Загальні послуги</span>
+                </button>
+              </li>
+
+              <li>
+                <button
+                  class="services-list__item popup-open"
+                  data-popup="_popup-sevices-5"
+                >
+                  <span class="services-list__label">
+                    <img src="./assets/img/services-5.svg" alt="services-5" />
+                  </span>
+
+                  <span class="services-list__name"
+                    >Транспортні ліцензії. Супровід ліцензійних перевірок.</span
+                  >
+                </button>
+              </li>
+
+              <li>
+                <button
+                  class="services-list__item popup-open"
+                  data-popup="_popup-sevices-6"
+                >
+                  <span class="services-list__label">
+                    <img src="./assets/img/services-6.svg" alt="services-6" />
+                  </span>
+
+                  <span class="services-list__name">Ринковий нагляд</span>
+                </button>
+              </li>
+
+              <li>
+                <button
+                  class="services-list__item popup-open"
+                  data-popup="_popup-sevices-7"
+                >
+                  <span class="services-list__label">
+                    <img src="./assets/img/services-7.svg" alt="services-7" />
+                  </span>
+
+                  <span class="services-list__name"
+                    >Відкриття міжнародних автобусних маршрутів</span
+                  >
+                </button>
+              </li>
+
+              <li>
+                <button
+                  class="services-list__item popup-open"
+                  data-popup="_popup-sevices-8"
+                >
+                  <span class="services-list__label">
+                    <img src="./assets/img/services-8.svg" alt="services-8" />
+                  </span>
+
+                  <span class="services-list__name"
+                    >Готові фірми з автотранспортними ліцензіями</span
+                  >
+                </button>
+              </li>
+
+              <li>
+                <button
+                  class="services__button button popup-open"
+                  data-popup="_popup-call"
+                >
+                  <span>отримати консультацію</span>
+                </button>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="stages _dark">
+      <div class="_container">
+        <div class="stages__wrapper">
+          <div class="stages__header">
+            <h2 class="stages__title">етапи роботи</h2>
+
+            <p class="stages__subtitle">
+              Основоположними принципами моєї роботи є оперативне та якісне
+              надання клієнту зі збереженням адвокатської таємниці фахової
+              юридичної допомоги.
+            </p>
+          </div>
+
+          <div class="stages__main">
+            <div class="stages__media">
+              <div class="stages__img">
+                <img src="./assets/img/stages.jpg" alt="stages" />
+              </div>
+
+              <div class="stages__button__container">
+                <button
+                  class="stages__button button popup-open"
+                  data-popup="_popup-call"
+                >
+                  <span>отримати консультацію</span>
+                </button>
+              </div>
+            </div>
+
+            <ul class="stages-list">
+              <li class="stages-list__item">
+                <p class="stages-list__count">01</p>
+                <p class="stages-list__description">Первинна консультація</p>
+              </li>
+
+              <li class="stages-list__item">
+                <p class="stages-list__count">02</p>
+                <p class="stages-list__description">
+                  Укладання з клієнтом договору про надання правової допомоги.
+                </p>
+              </li>
+
+              <li class="stages-list__item">
+                <p class="stages-list__count">03</p>
+                <p class="stages-list__description">
+                  Вивчення документів, їх аналіз та оцінка.
+                </p>
+              </li>
+
+              <li class="stages-list__item">
+                <p class="stages-list__count">04</p>
+                <p class="stages-list__description">
+                  Забезпечення належного захисту інтересів клієнта.
+                </p>
+              </li>
+
+              <li class="stages-list__item">
+                <p class="stages-list__count">05</p>
+                <p class="stages-list__description">
+                  Отримання бажаного кінцевого результату.
+                </p>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="benefits">
+      <div class="_container">
+        <div class="benefits__wrapper">
+          <div class="benefits__content">
+            <h2 class="benefits__title">переваги</h2>
+
+            <ul class="benefits-list">
+              <li class="benefits-list__item">
+                <div class="benefits-list__label">
+                  <img src="./assets/img/benefits-0.svg" alt="benefits-0" />
+                </div>
+
+                <div class="benefits-list__content">
+                  <h3 class="benefits-list__title">Гарантія</h3>
+
+                  <p class="benefits-list__description">
+                    Гарантую якість правової допомоги. Працюю офіційно, на
+                    підставі договору.
+                  </p>
+                </div>
+              </li>
+
+              <li class="benefits-list__item">
+                <div class="benefits-list__label">
+                  <img src="./assets/img/benefits-1.svg" alt="benefits-1" />
+                </div>
+
+                <div class="benefits-list__content">
+                  <h3 class="benefits-list__title">Конфіденційність</h3>
+
+                  <p class="benefits-list__description">
+                    Гарантую нерозголошення відомостей про клієнта, питань, що
+                    стали підставою для звернення за правовою допомогою
+                  </p>
+                </div>
+              </li>
+
+              <li class="benefits-list__item">
+                <div class="benefits-list__label">
+                  <img src="./assets/img/benefits-2.svg" alt="benefits-2" />
+                </div>
+
+                <div class="benefits-list__content">
+                  <h3 class="benefits-list__title">Прозорість</h3>
+
+                  <p class="benefits-list__description">
+                    Інформую клієнта про реальний стан справ та можливості
+                    досягнення бажаного результату.
+                  </p>
+                </div>
+              </li>
+
+              <li class="benefits-list__item">
+                <div class="benefits-list__label">
+                  <img src="./assets/img/benefits-3.svg" alt="benefits-3" />
+                </div>
+
+                <div class="benefits-list__content">
+                  <h3 class="benefits-list__title">Індивідуальний підхід</h3>
+
+                  <p class="benefits-list__description">
+                    Ціную кожного клієнта. Пропоную широкий вибір умов
+                    співпраці, від індивідуального замовлення до комплексного
+                    обслуговування. Гнучка цінова політика.
+                  </p>
+                </div>
+              </li>
+            </ul>
+          </div>
+
+          <div class="benefits__media">
+            <div class="benefits__img">
+              <img
+                src="./assets/img/benefits-media.jpg"
+                alt="benefits-banner"
+              />
+            </div>
+
+            <div class="benefits-banner">
+              <div class="benefits-banner__bg">
+                <img
+                  src="./assets/img/benefits-background.jpg"
+                  alt="benefits-background"
+                />
+              </div>
+
+              <div class="benefits-banner__content">
+                <p class="benefits-banner__title">
+                  Є конкретні питання?<br />
+                  Замовте безкоштовну консультацію.
+                </p>
+
+                <button
+                  class="benefits__button button popup-open"
+                  data-popup="_popup-call"
+                >
+                  <span>отримати консультацію</span>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="_container footer__container">
+        <div class="footer__wrapper">
+          <p class="footer__copyright">
+            © 2023. Адвокат Сергій Мазур. Всі права захищені.
+          </p>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
