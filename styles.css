@@ -2563,6 +2563,9 @@ html:not(.v-mobile) .popup-call-contacts__link:focus-visible .popup-call-contact
   align-items: center;
   width: max-content;
   padding: 0.5rem 1rem;
+  transition: background 0.5s;
+  transition-delay: 0s;
+  transition-timing-function: cubic-bezier(0.25, 0.1, 0.25, 1);
   text-decoration: unset;
   color: var(--color-black-100);
   background-color: var(--color-white);
