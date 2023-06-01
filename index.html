@@ -41,35 +41,205 @@
               <img src="./assets/img/popup-close.svg" alt="close" />
             </button>
 
-            <div class="popup__content">
-              <div class="popup__title__container">
-                <p class="popup__title">Contact us</p>
-                <p class="popup__subtitle">Contact us</p>
+            <div class="popup__content popup-call__content">
+              <div class="popup-call__form">
+                <p class="popup-call__title">
+                  Замовте зворотній дзвінок,<br />
+                  і я зв’яжуся з вами найближчим часом
+                </p>
+
+                <form
+                  action="post"
+                  class="popup-form"
+                  data-popup-open="_popup-thanks"
+                >
+                  <div>
+                    <label for="name" class="incorrect">
+                      <span>
+                        <img src="./assets/img/input-name.svg" alt="name" />
+                      </span>
+                      <input
+                        type="text"
+                        name="name"
+                        id="name"
+                        placeholder="Ваше ім’я"
+                      />
+                      <strong>Невірний формат</strong>
+                    </label>
+
+                    <label for="telephone">
+                      <span>
+                        <img src="./assets/img/input-call.svg" alt="name" />
+                      </span>
+                      <input
+                        type="telephone"
+                        name="telephone"
+                        id="telephone"
+                        placeholder="Ваш телефон"
+                      />
+                      <strong>Невірний формат</strong>
+                    </label>
+                  </div>
+
+                  <p>
+                    <button type="submit">
+                      <span>передзвоніть мені</span>
+                    </button>
+                  </p>
+                </form>
               </div>
 
-              <form
-                action="post"
-                class="popup-form"
-                data-popup-open="_popup-thanks"
-              >
-                <div>
-                  <label for="name" class="incorrect">
-                    <span>Ваше ім’я</span>
-                    <input type="text" name="name" id="name" />
-                    <strong>Невірний формат</strong>
-                  </label>
+              <div class="popup-call-contacts">
+                <div class="popup-call-contacts__item">
+                  <p class="popup-call-contacts__title">або подзвоніть мені</p>
 
-                  <label for="telephone">
-                    <span>Ваше ім’я</span>
-                    <input type="telephone" name="telephone" id="telephone" />
-                    <strong>Невірний формат</strong>
-                  </label>
+                  <a href="tel:+380969124800" class="popup-call-contacts__link">
+                    <span class="popup-call-contacts__label">
+                      <img src="./assets/img/popup-call.svg" alt="call" />
+                    </span>
+
+                    <span class="popup-call-contacts__name"
+                      >+38 096 912 48 00</span
+                    >
+                  </a>
                 </div>
 
-                <p>
-                  <button type="submit"><span>Відправити</span></button>
-                </p>
-              </form>
+                <div class="popup-call-contacts__item">
+                  <p class="popup-call-contacts__title">
+                    або пишіть мені в месенджери
+                  </p>
+
+                  <ul class="popup-call-socials">
+                    <div class="popup-call-socials__container">
+                      <li>
+                        <a
+                          href="#"
+                          target="_blank"
+                          class="popup-call-socials__item"
+                        >
+                          <span class="popup-call-socials__label">
+                            <img
+                              src="./assets/img/socials-telegram.svg"
+                              alt="telegram"
+                            />
+                          </span>
+
+                          <span class="popup-call-socials__name">Telegram</span>
+                        </a>
+                      </li>
+
+                      <li>
+                        <a
+                          href="#"
+                          target="_blank"
+                          class="popup-call-socials__item"
+                        >
+                          <span class="popup-call-socials__label">
+                            <img
+                              src="./assets/img/socials-viber.svg"
+                              alt="viber"
+                            />
+                          </span>
+
+                          <span class="popup-call-socials__name">Viber</span>
+                        </a>
+                      </li>
+
+                      <li>
+                        <a
+                          href="#"
+                          target="_blank"
+                          class="popup-call-socials__item"
+                        >
+                          <span class="popup-call-socials__label">
+                            <img
+                              src="./assets/img/socials-watsup.svg"
+                              alt="watsapp"
+                            />
+                          </span>
+
+                          <span class="popup-call-socials__name">WhatsApp</span>
+                        </a>
+                      </li>
+                    </div>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div
+        class="popup fullscreen-phone popup-services-0"
+        data-popupname="_popup-services-0"
+        aria-modal="true"
+        role="dialog"
+      >
+        <div class="popup__overlay"></div>
+        <div class="popup__scroll">
+          <div class="popup__wrapper">
+            <button class="popup__close">
+              <img
+                class="desktop"
+                src="./assets/img/popup-close.svg"
+                alt="close"
+              />
+              <img
+                class="mobile"
+                src="./assets/img/popup-close-black.svg"
+                alt="close"
+              />
+            </button>
+
+            <div class="popup__content popup-services__content">
+              <div class="popup-services__img">
+                <div class="popup-services__img__container">
+                  <img
+                    src="./assets/img/popup-service/sercvice-0.jpg"
+                    alt="service"
+                  />
+                </div>
+              </div>
+
+              <div class="popup-services__main">
+                <div class="popup-services__typography typography">
+                  <div>
+                    <h2>advokat</h2>
+                    <h3>advokat</h3>
+                    <h4>advokat</h4>
+
+                    <p>
+                      <a href="#">advokat</a>
+                      <span>advokat</span>
+                      <strong>advokat</strong>
+                      <i>advokat</i>
+                      <ins>advokat</ins>
+                      Якщо вас звільнили з державної (публічної) служби, або
+                      будь-якого підприємства, установи, організації незалежно
+                      від форми власності незаконно, чи притягнули до
+                      дисциплінарної або матеріальної відповідальності.
+                    </p>
+
+                    <ul>
+                      <li>advokat</li>
+                      <li>advokat</li>
+                    </ul>
+
+                    <ol>
+                      <li>advokat</li>
+                      <li>advokat</li>
+                    </ol>
+                  </div>
+                </div>
+
+                <button
+                  class="popup__button button popup-open"
+                  data-popup="_popup-call"
+                >
+                  <span>отримати консультацію</span>
+                </button>
+              </div>
             </div>
           </div>
         </div>
@@ -88,24 +258,23 @@
               <img src="./assets/img/popup-close.svg" alt="close" />
             </button>
 
-            <div class="popup__bg">
-              <img src="./assets/img/popup-thanks.jpg" alt="thanks" />
-            </div>
+            <div class="popup__content popup-thanks__content">
+              <div class="popup-thanks__header">
+                <div class="popup-thanks__label">
+                  <img src="./assets/img/popup-thanks.svg" alt="thanks" />
+                </div>
 
-            <div class="popup__content">
-              <div class="popup__title__container">
-                <p class="popup__title">Дякуємо!</p>
-                <p class="popup__subtitle">
-                  Вашу заявку прийнято.<br />
-                  Ми зв’яжемося з вами найближчим часом.
-                </p>
+                <p class="popup-thanks__title">Дякую за ваш час та зусилля!</p>
               </div>
 
-              <div class="popup__action">
-                <a href="#" class="popup__button button"
-                  ><span>На головну</span></a
-                >
-              </div>
+              <p class="popup-thanks__description">
+                Заявка прийнята. <br />
+                Очікуйте, будь-ласка, на мій дзвінок.
+              </p>
+
+              <button class="popup__back button">
+                <span>На головну</span>
+              </button>
             </div>
           </div>
         </div>
@@ -184,7 +353,7 @@
               <li>
                 <button
                   class="services-list__item popup-open"
-                  data-popup="_popup-sevices-0"
+                  data-popup="_popup-services-0"
                 >
                   <span class="services-list__label">
                     <img src="./assets/img/services-0.svg" alt="services-0" />
@@ -197,7 +366,7 @@
               <li>
                 <button
                   class="services-list__item popup-open"
-                  data-popup="_popup-sevices-1"
+                  data-popup="_popup-services-1"
                 >
                   <span class="services-list__label">
                     <img src="./assets/img/services-1.svg" alt="services-1" />
@@ -212,7 +381,7 @@
               <li>
                 <button
                   class="services-list__item popup-open"
-                  data-popup="_popup-sevices-2"
+                  data-popup="_popup-services-2"
                 >
                   <span class="services-list__label">
                     <img src="./assets/img/services-2.svg" alt="services-2" />
@@ -228,7 +397,7 @@
               <li>
                 <button
                   class="services-list__item popup-open"
-                  data-popup="_popup-sevices-3"
+                  data-popup="_popup-services-3"
                 >
                   <span class="services-list__label">
                     <img src="./assets/img/services-3.svg" alt="services-3" />
@@ -243,7 +412,7 @@
               <li>
                 <button
                   class="services-list__item popup-open"
-                  data-popup="_popup-sevices-4"
+                  data-popup="_popup-services-4"
                 >
                   <span class="services-list__label">
                     <img src="./assets/img/services-4.svg" alt="services-4" />
@@ -256,7 +425,7 @@
               <li>
                 <button
                   class="services-list__item popup-open"
-                  data-popup="_popup-sevices-5"
+                  data-popup="_popup-services-5"
                 >
                   <span class="services-list__label">
                     <img src="./assets/img/services-5.svg" alt="services-5" />
@@ -271,7 +440,7 @@
               <li>
                 <button
                   class="services-list__item popup-open"
-                  data-popup="_popup-sevices-6"
+                  data-popup="_popup-services-6"
                 >
                   <span class="services-list__label">
                     <img src="./assets/img/services-6.svg" alt="services-6" />
@@ -284,7 +453,7 @@
               <li>
                 <button
                   class="services-list__item popup-open"
-                  data-popup="_popup-sevices-7"
+                  data-popup="_popup-services-7"
                 >
                   <span class="services-list__label">
                     <img src="./assets/img/services-7.svg" alt="services-7" />
@@ -299,7 +468,7 @@
               <li>
                 <button
                   class="services-list__item popup-open"
-                  data-popup="_popup-sevices-8"
+                  data-popup="_popup-services-8"
                 >
                   <span class="services-list__label">
                     <img src="./assets/img/services-8.svg" alt="services-8" />
@@ -393,7 +562,7 @@
       </div>
     </section>
 
-    <section class="benefits">
+    <section class="benefits _light">
       <div class="_container">
         <div class="benefits__wrapper">
           <div class="benefits__content">
@@ -493,6 +662,75 @@
                 </button>
               </div>
             </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="contacts _dark">
+      <div class="_container">
+        <div class="contacts__wrapper">
+          <div class="contacts__map">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2540.805018828408!2d30.496096074990554!3d50.44473238777753!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4cef468f409c7%3A0xf35dbf8370cb1ab8!2z0YPQuy4g0KHQuNC80L7QvdCwINCf0LXRgtC70Y7RgNGLLCA4LCDQmtC40LXQsiwgMDIwMDA!5e0!3m2!1sru!2sua!4v1685610684215!5m2!1sru!2sua"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+          </div>
+
+          <div class="contacts__content">
+            <h2 class="contacts__title">контакти</h2>
+
+            <div class="contacts-info">
+              <p class="contacts-info__title">адвокат сергій мазур</p>
+              <p class="contacts-info__subtitle">Право на твоїй стороні</p>
+            </div>
+
+            <ul class="contacts-list">
+              <li class="contacts-list__item">
+                <p class="contacts-list__title">
+                  Дзвоніть мені або пишіть у Telegram
+                </p>
+                <a href="tel:+380969124800" class="contacts-list__link"
+                  >+38 096 912 48 00</a
+                >
+              </li>
+
+              <li class="contacts-list__item">
+                <p class="contacts-list__title">
+                  Також радо зустріну вас у себе в Київському офісі
+                </p>
+                <a
+                  href="https://goo.gl/maps/oB37NcJam15Nr6vH9"
+                  target="_blank"
+                  class="contacts-list__link"
+                  >вул. Симона Петлюри 8
+                </a>
+              </li>
+
+              <li class="contacts-list__item">
+                <p class="contacts-list__title">
+                  Можна також написати на Email
+                </p>
+                <a href="mailto:infomazur@gmail.com" class="contacts-list__link"
+                  >infomazur@gmail.com</a
+                >
+              </li>
+
+              <li class="contacts-list__item">
+                <p class="contacts-list__title">
+                  Або замовте безкоштовну консультацію
+                </p>
+
+                <button
+                  class="contacts__button button popup-open"
+                  data-popup="_popup-call"
+                >
+                  <span>отримати консультацію</span>
+                </button>
+              </li>
+            </ul>
           </div>
         </div>
       </div>
