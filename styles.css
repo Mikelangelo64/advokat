@@ -2912,33 +2912,6 @@ html:not(.v-mobile) .popup-call-socials__item:focus-visible {
   z-index: 0;
   width: 100%;
 }
-@media (min-width: 1200px) {
-  .banner-bg__img {
-    max-width: 43.125rem;
-  }
-}
-@media (min-width: 1200px) and (min-width: 1920px) {
-  .banner-bg__img {
-    max-width: 35.985%;
-  }
-}
-@media (min-width: 900px) and (max-width: 1199px) {
-  .banner-bg__img {
-    max-width: 43.125rem;
-    transform: translate(50%, 0);
-  }
-}
-@media (max-width: 899px) {
-  .banner-bg__img {
-    width: 43.125rem;
-    transform: translate(70%, 0);
-  }
-}
-@media (max-width: 899px) and (max-width: 550px) {
-  .banner-bg__img {
-    transform: translate(78%, 0);
-  }
-}
 .banner-bg__img img {
   position: absolute;
   top: 0;
@@ -2946,6 +2919,11 @@ html:not(.v-mobile) .popup-call-socials__item:focus-visible {
   width: 100%;
   height: 100%;
   object-fit: cover;
+}
+@media (max-width: 899px) {
+  .banner-bg__img img {
+    transform: translate(16%, 0);
+  }
 }
 
 @media (min-width: 1200px) {
