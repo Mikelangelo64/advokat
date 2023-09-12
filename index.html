@@ -5,7 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-  <script defer src="script.js"></script><link href="styles.css" rel="stylesheet"></head>
+
+    <link href="styles.css" rel="stylesheet" />
+  </head>
 
   <body>
     <header class="header">
@@ -23,6 +25,10 @@
               data-popup="_popup-call"
             >
               <span>зв’язатися</span>
+            </button>
+
+            <button class="menu-burger popup-open" data-popup="_popup-menu">
+              <span></span>
             </button>
           </div>
         </div>
@@ -171,6 +177,46 @@
       </div>
 
       <div
+        class="popup popup-menu"
+        data-popupname="_popup-menu"
+        aria-modal="true"
+        role="dialog"
+      >
+        <div class="popup__overlay"></div>
+
+        <div class="popup__additional"></div>
+
+        <div class="popup__scroll">
+          <div class="popup__wrapper">
+            <button class="popup__close">
+              <img src="./assets/img/popup-close-black.svg" alt="close" />
+            </button>
+
+            <div class="popup__content popup-menu__content">
+              <nav class="menu">
+                <ul class="menu__list">
+                  <li>
+                    <a href="#" class="menu__item">Головна</a>
+                  </li>
+                  <li>
+                    <a href="#" data-goto=".services" class="menu__item anchor"
+                      >Послуги</a
+                    >
+                  </li>
+                  <li>
+                    <a href="#" class="menu__item">Переваги</a>
+                  </li>
+                  <li>
+                    <a href="#" class="menu__item">Контакти</a>
+                  </li>
+                </ul>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div
         class="popup fullscreen-phone popup-services-0"
         data-popupname="_popup-services-0"
         aria-modal="true"
@@ -301,7 +347,12 @@
           </button>
 
           <div class="banner__img">
-            <img src="./assets/img/banner-1.jpg" alt="banner" />
+            <img class="desktop" src="./assets/img/banner-1.jpg" alt="banner" />
+            <img
+              class="phone"
+              src="./assets/img/banner-phone.jpg"
+              alt="banner"
+            />
           </div>
         </div>
       </div>
@@ -749,5 +800,9 @@
         </div>
       </div>
     </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/vevet@2.17.0/build/cdn/index.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <script src="script.js"></script>
   </body>
 </html>
